@@ -120,9 +120,11 @@
   .dark-line {
     cursor: pointer;
     position: fixed;
-    top: 10px;
-    left: 10px;
+    top: 20px;
+    right: 0;
   }
+
+
   
   @media screen and (min-width: 651px) {
     .title-header h3 {
