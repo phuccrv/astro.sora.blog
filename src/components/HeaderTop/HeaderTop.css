@@ -21,7 +21,7 @@
     list-style: none;
     height: 40px;
     display: block;
-    color: #646464;
+    color: #000000;
     font-size: 12px;
     font-weight: 500;
     line-height: 40px;
@@ -39,7 +39,7 @@
     list-style: none;
     height: 40px;
     display: block;
-    color: #646464;
+    color: #000000;
     line-height: 40px;
     margin: 0 10px 0 0;
     transition: color .17s;
@@ -102,6 +102,11 @@
 .show-menu{
     display: block !important;
 
+}
+
+.dark-line{
+    text-align: right;
+    cursor: pointer;
 }
 
 

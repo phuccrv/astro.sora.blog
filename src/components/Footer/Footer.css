@@ -7,7 +7,7 @@
 #footer-wrapper{
     display: flex;
     margin-top: 50px;
-    background-color: aliceblue;
+    background-color: rgb(255, 255, 255);
 }
 
 .footer-common-widget{
