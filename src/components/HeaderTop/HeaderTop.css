@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    display: flex;
+    justify-content: space-around;
+    margin: 10px 0px;
+    border-bottom: 1px solid #e8e8e8;
+}
+
+/* .icon-menu-drop{
+    display: none;
+} */
+.top-bar-nav ul{
+    display: flex;
+}
+.top-bar-nav ul li{
+    list-style: none;
+    height: 40px;
+    display: block;
+    color: #646464;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 40px;
+    text-transform: uppercase;
+    margin: 0 10px 0 0;
+    transition: color .17s;
+    cursor: pointer;
+}
+/* top-bar-social */
+.top-bar-social ul{
+    display: flex;
+}
+
+.top-bar-social ul li{
+    list-style: none;
+    height: 40px;
+    display: block;
+    color: #646464;
+    line-height: 40px;
+    margin: 0 10px 0 0;
+    transition: color .17s;
+   
+}
+
+.header-header{
+    text-align: center;
+    
+}
+.header-logo h1{
+    color: #000;
+    font-family: Qwigley;
+    font-style: italic;
+    font-size: 45px;
+    line-height: 1.4em;
+    margin-top: 50px;
+}
+/* header-menu */
+
+.main-menu-nav{
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid #e8e8e8;
+    border-bottom: 1px solid #e8e8e8;
+}
+
+.main-menu-nav li{
+    letter-spacing: .5px;
+    position: relative;
+    color: #222222d1;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 60px;
+    display: inline-block;
+    margin: 0;
+    padding: 0 13px;
+    transition: color .17s ease;
+}
+
+.main-menu-nav li a{
+    text-decoration: none;
+    color: #000;
+}
+
+.title-header{
+    text-align: -webkit-center;
+    margin: 50px;
+}
+
+.title-header h3{
+    font-size: 36px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    text-align: center;
+    width: 100%;
+}
+
+/* responsive */
+
+@media screen and (min-width:651px) {
+    .title-header h3{
+        font-size: 25px;
+    }
+}
+
+@media screen and (min-width: 400px){
+    .main-menu-nav{
+        /* display: none; */
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .icon-menu-drop{
+        display: block;
+        margin-top: 10px;
+        color: #646464;
+        cursor: pointer;
+    }
+    .header-logo h1{
+        margin-top: 10px;
+    }
+}
+
+@media screen and (max-width: 325px) {
+    .title-header h3{
+        font-size: 25px;
+    }
+    .header-logo h1{
+        margin-top: 10px;
+    }
+
+    .main-menu-nav{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .main-menu-nav li{
+        line-height: 30px;
+    }
+}

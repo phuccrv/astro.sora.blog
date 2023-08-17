@@ -1,0 +1,29 @@
+---
+import Content from '../components/Content/Content.astro';
+import HeaderTop from '../components/HeaderTop/HeaderTop.astro';
+import Sidebar from '../components/Sidebar/Sidebar.astro';
+import Footer from '../components/Footer/Footer.astro'
+import Layout from '../layouts/Layout.astro';
+import {dataContent} from '../data/data'
+
+---
+
+<Layout title="Welcome newblog">
+	<main>
+		<HeaderTop/>
+		<div class="all-content">
+			<Content Contentdata={dataContent}/>
+			<Sidebar/>
+		</div>
+		<Footer/>
+	</main>
+</Layout>
+
+<style>
+	.all-content{
+		display: flex;
+	}
+	main{
+		overflow-x: hidden;
+	}
+</style>

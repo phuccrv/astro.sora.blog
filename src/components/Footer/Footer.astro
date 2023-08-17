@@ -1,0 +1,74 @@
+---
+import "./Footer.css";
+import { dataContent } from "../../data/data";
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Astro description" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title></title>
+  </head>
+  <body>
+    <div id="footer-wrapper">
+      <div class="footer-common-widget">
+        <div class="widget-Image">
+          <div class="widget-title">
+            <h3>About Sorablog</h3>
+          </div>
+          <div class="widget-content">
+            <img src="../public/images-content1.jpg" alt="" />
+            <br />
+            <span
+              >Glimmer is one of the most Elegant, Clean and Creative WordPress
+              blog.</span
+            >
+          </div>
+        </div>
+      </div>
+      <div class="footer-common-widget">
+        <div class="widget-title">
+          <h3>Usefull Links</h3>
+          <div class="widget-content">
+            <ul>
+              <li><a href="">Home</a></li>
+              <li><a href="">Contact Us</a></li>
+              <li><a href="">About Us</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-common-widget">
+        {
+          dataContent.map((item) => (
+            <div class="box-footer-common-widget">
+              <div class="widget-title">
+                <h3>Recent in Fashion</h3>
+              </div>
+              <div class="box-cart-footer">
+                <div class="box-cart-footer-img">
+                  <img src={item.imageSrc} alt="" />
+                </div>
+                <div class="box-cart-footer-infor">
+                  <a href="">
+                    17 Books You Should Read Before (or at) University
+                  </a>
+                  <br />
+                  <samp>March 17, 2016</samp>
+                </div>
+              </div>
+            </div>
+          ))
+        }
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>CREATED BY</span><p>SORATEMPLATES</p>
+    </div>
+  </body>
+  <html></html>
+</html>

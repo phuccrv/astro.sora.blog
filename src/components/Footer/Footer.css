@@ -1,0 +1,125 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#footer-wrapper{
+    display: flex;
+    margin-top: 50px;
+}
+
+.footer-common-widget{
+    width: 400px;
+    margin: 0px 30px 0px 0px;
+}
+
+.widget-content img{
+    width: 100%;
+}
+
+.widget-Image{
+   margin: 50px 0px 20px 150px;
+}
+
+.widget-title h3{
+    text-align: start;
+    margin: 10px;
+}
+
+.widget-content{
+    margin-left: 10px;
+}
+
+.widget-content ul li{
+    list-style: none;
+    border-bottom: 1px solid #ccc;
+    padding: 15px;
+}
+
+.widget-content ul li a{
+    text-decoration: none;
+    color: rgb(86, 86, 86);
+}
+
+.widget-title{
+    /* margin-top: 50px; */
+}
+
+.box-cart-footer{
+    display: flex;
+}
+
+.box-cart-footer-img img{
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+}
+
+.box-cart-footer-infor{
+    margin-left: 10px;
+}
+
+.box-cart-footer-infor a{
+    text-decoration: none;
+    color: #545454;
+    font-size: 20px;
+}
+
+.footer-bottom{
+   
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    background-color: antiquewhite;
+    padding: 10px 0px;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-bottom p{
+    color: #e246f1;
+    margin-left: 5px;
+}
+
+@media screen and (min-width: 978px) {
+    .widget-Image{
+        margin: 50px 0px 20px 20px;
+    }
+}
+
+@media screen and (min-width: 658px) {
+    .widget-Image {
+        margin: 0px 0px 20px 30px;
+    }
+    .box-cart-footer-infor {
+        /* margin-left: 10px; */
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width:657px) {
+    /* .all-sidebar{
+        display: none;
+    } */
+    .footer-common-widget:first-child{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 326px) and (max-width:399px) {
+    .footer-common-widget:first-child{
+        display: none;
+    }
+    .footer-common-widget:nth-child(2){
+        display: none;
+    }
+    #footer-wrapper{
+        margin: 20px;
+    }
+    .box-cart-footer-infor a{
+        font-size: 14px;
+    }
+    .widget-title h3{
+        margin: 0px;
+    }
+}
