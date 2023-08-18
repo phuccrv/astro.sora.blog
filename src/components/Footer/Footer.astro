@@ -2,7 +2,6 @@
 import "./Footer.css";
 import { dataContent } from "../../data/data";
 ---
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -20,7 +19,7 @@ import { dataContent } from "../../data/data";
           <div class="widget-title">
             <h3>About Sorablog</h3>
           </div>
-          <div class="widget-content">
+          <div class="widgetcontent">
             <img src="../public/images-content1.jpg" alt="" />
             <br />
             <span
@@ -55,10 +54,10 @@ import { dataContent } from "../../data/data";
                 </div>
                 <div class="box-cart-footer-infor">
                   <a href="">
-                    17 Books You Should Read Before (or at) University
+                    {item.postTitle}
                   </a>
                   <br />
-                  <samp>March 17, 2016</samp>
+                  <span>{item.date}</span>
                 </div>
               </div>
             </div>

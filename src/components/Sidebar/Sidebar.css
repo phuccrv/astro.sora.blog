@@ -5,12 +5,14 @@
     --widget-border-color: #ccc;
     --link-color: black;
     --link-hover-color: #000000;
+    --sidebar-text-color: #961f9c;
   }
   
   * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
   }
   
   .title {
@@ -32,6 +34,7 @@
   
   .widget-title h3 {
     margin: 10px;
+    text-align: center;
   }
   
   .link-app-top,
@@ -51,10 +54,23 @@
   .icon-link a {
     color: var(--link-color);
   }
-  
+
+  .facebook a:hover { color: #375a94;transition: 0.4s ease-in-out; }
+  .twitter a:hover { color: #5c9aff; transition: 0.4s ease-in-out }
+  .pinterest a:hover { color: #ca2d2d; transition: 0.4s ease-in-out }
+  .whatsapp a:hover { color: #2ab934; transition: 0.4s ease-in-out }
+  .reddit a:hover { color: #f74300; transition: 0.4s ease-in-out }
+  .vk a:hover { color: #4a719e; transition: 0.4s ease-in-out }
+  .instagram a:hover { color: #db952c; transition: 0.4s ease-in-out }
+  .youtube a:hover { color: #ff0202; transition: 0.4s ease-in-out }
+    
   .widgetImage span {
     color: var(--title-font-color);
     font-size: 15px;
+    display: block;
+    width: 255px;
+    line-height: 1.4rem;
+    color: #434343;
   }
   
   .widgetLinkList {

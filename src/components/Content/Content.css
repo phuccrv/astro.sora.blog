@@ -1,7 +1,7 @@
 :root {
     --main-bg-color: #ffffff;
     --text-color: #3d3d3d;
-    --accent-color: #733d87;
+    --accent-color: #4f2e51;
     --meta-color: #b3b3b3;
     --divider-color: #ccc;
     --read-more-bg-color: #ededed;
@@ -16,6 +16,11 @@
     margin: 0;
     box-sizing: border-box;
   }
+
+    .all-content{
+    margin: 0px 100px;
+  }
+  
   
   #main-wrapper {
     border: 1px solid var(--divider-color);
@@ -44,7 +49,8 @@
     display: block;
     color: var(--text-color);
     transition: color 0.17s;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
+    font-family: Arial, Helvetica, sans-serif;
   }
   
   .post-title a:hover {
@@ -58,10 +64,12 @@
   .post-meta span a {
     text-transform: capitalize;
     color: var(--meta-color);
-    font-size: 12px;
+    font-size: 14px;
     letter-spacing: 0.04em;
     font-style: italic;
     text-decoration: none;
+    margin-left: 10px;
+    font-family: Arial, Helvetica, sans-serif;
   }
   
   .post-meta span:nth-child(2)::before,
@@ -72,8 +80,14 @@
   }
   
   .post-snippet {
-    margin: 20px 0px;
-    font-size: 14px;
+    color: #646464;
+    text-align: left;
+    position: relative;
+    overflow: hidden;
+    font-size: 15px;
+    line-height: 1.75em;
+    font-weight: 400;
+    margin: 10px 0 10px;
   }
   
   .read-more {
@@ -89,6 +103,7 @@
     padding: 15px 30px;
     text-decoration: none;
     margin-bottom: 20px;
+    font-family: Arial, Helvetica, sans-serif;
   }
   
   .icon {
@@ -117,76 +132,124 @@
     color: var(--footer-text-color);
   }
 
-@media screen and (max-width:658px){
-    .blog-pager {
-        text-align: center;
-        margin: 10px 0px;
-    }
-    
-    .blog-pager a {
-        display: inline-block;
-        font-size: 16px;
-        color: #fff;
-        text-decoration: none;
-        border-radius: 5px;
-    }
-    .widgetImage{
-        width: 350px !important;
-    }
+  .icon li .pinterest:hover {
+    color: rgb(212, 64, 64);
+  }
+  .icon li .facebook:hover {
+    color: rgb(41, 74, 144);
+  }
+  .icon li .twitter:hover {
+    color: rgb(106, 153, 255);
+  }
+  .icon li .tumblr:hover {
+    color: rgb(0, 26, 82);
+  }
+  .icon li .linkedin:hover {
+    color: #0063c2;
+  }
+  
+  .icon li a:hover svg {
+    fill: rgb(139, 139, 139);
+    transition: fill 0.3s;
+  }
+
+/* responsive */
+
+@media screen and (min-width: 375px) {
+  .all-content{
+    margin: 0;
+  }
+
+  #content-wrapper{
+    margin: 20px 10px;
+  }
+  #main-wrapper{
+    width: 100%;
+  }
+  .post-meta span a{
+    font-size: 13px;
+    margin: 0;
+  }
+  .blog-pager{
+    margin: 0px;
+  }
+  .all-sidebar{
+    display: none;
+  }
 }
 
+@media screen and (min-width:480px) {
+  .all-content{
+    margin: 20px 0px 0px 0px;
+  }
+  #main-wrapper{
+    width: 100%;
+  }
+  .all-sidebar{
+    display: none;
+  }
+  .blog-pager{
+    margin: 0;
+  }
 
-@media screen and (min-width:657px) {
-    .all-sidebar{
-        /* display: none; */
-    }
-    #content-wrapper{
-        margin: 0px 20px;
-    }
-
-    .blog-pager {
-        margin: 10px 0px;
-    }
 }
 
-@media screen and (max-width:675px) {
-    .all-sidebar{
-        display: none;
-    }
+@media screen and (max-width: 600px){
+  .all-content{
+    margin: 20px 0px 0px 0px;
+  }
+  #main-wrapper{
+    width: 100%;
+  }
+  .all-sidebar{
+    display: none;
+  }
+  .blog-pager{
+    margin: 0;
+  }
 }
 
-@media screen and (min-width: 400px) and (max-width: 700px){
-    #content-wrapper {
-        margin: 0px 20px;
-    }
-
-
-    .blog-pager {
-        margin: 10px 0px;
-    }
-    .footer-common-widget:first-child{
-        display: none;
-    }
-    .footer-common-widget:nth-child(2){
-        display: none;
-    }
-    #footer-wrapper{
-        margin: 50px;
-    }
-    .title-header h3{
-        font-size: 20px !important;
-    }
-
-    .header-logo h1{
-        margin: 0;
-    }
+@media screen and (max-width: 800px) {
+  .all-content{
+    margin-right: 20px;
+  }
+  #main-wrapper{
+    width: 100%;
+  }
+  .blog-pager{
+    margin: 0;
+  }
+  .all-sidebar{
+    display: none;
+  }
+}
+ 
+@media screen and (min-width:1024px){
+  .all-content{
+    margin: 0px;
+  }
+  .blog-pager{
+    margin: 0;
+  }
+  .all-sidebar{
+    display: block;
+  }
 }
 
-@media screen and (min-width: 325px) {
-    #content-wrapper{
-        margin: 0px 20px;
-    }
-    .blog-pager {
-        margin: 0px;
-    }
+@media screen and (min-width:1025px){
+  .all-content{
+    margin: 0px 100px;
+  }
+  
+  .all-sidebar{
+    display: block;
+    margin-top: 20px;
+  }
+  #main-wrapper{
+    width: 100%;
+  }
 }
+  
+
+
+
