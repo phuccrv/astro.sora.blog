@@ -141,6 +141,10 @@
     text-align: center;
   }
   
+
+  .Labels-title h3{
+    margin: 10px 0px;
+  }
   .item-Labels {
     display: flex;
     flex-direction: row;

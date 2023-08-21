@@ -33,7 +33,7 @@
   }
   
   .widget-title h3 {
-    text-align: start;
+    text-align: center;
     margin: 10px 0px;
   }
   
@@ -73,7 +73,10 @@
   }
 
   .box-cart-footer-infor span{
-    font-size: 13px;
+    font-size: 11px;
+    color: var(--widget-text-color);
+    font-style: italic;
+    letter-spacing: 2px;
   }
   
   .box-cart-footer-infor a {
