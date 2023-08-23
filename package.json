@@ -11,6 +11,7 @@
     "astro": "astro"
   },
   "dependencies": {
+    "@astrojs/vercel": "^3.8.2",
     "astro": "^2.10.9",
     "react-icons": "^4.10.1",
     "react-router-dom": "^6.15.0",
