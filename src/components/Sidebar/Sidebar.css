@@ -32,8 +32,8 @@
     text-align: center;
   }
   .widget-content img{
-    border-radius: 50%;
-    object-fit: cover;
+    background-image: url(../../../public/logo.png);
+    background-size: cover;
   }
   .widget-title h3 {
     margin: 10px;

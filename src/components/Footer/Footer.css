@@ -38,7 +38,9 @@
   }
   
   .widgetcontent {
-    /* margin-left: 10px; */
+    background-image: url(../../../public/logo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
   }
 
   .widgetcontent img{
@@ -64,6 +66,7 @@
     margin-bottom: 10px;
   }
   
+
   .box-cart-footer-img img {
     width: 70px;
     height: 70px;
