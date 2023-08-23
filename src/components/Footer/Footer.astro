@@ -1,7 +1,8 @@
 ---
 import "./Footer.css";
-import { dataContent } from "../../data/data";
+import { dataFooter } from "../../data/data";
 ---
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -17,10 +18,10 @@ import { dataContent } from "../../data/data";
       <div class="footer-common-widget">
         <div class="widget-Image">
           <div class="widget-title">
-            <h3>About Sorablog</h3>
+            <h3>About Meta Technology</h3>
           </div>
           <div class="widgetcontent">
-            <img src="../public/images-content1.jpg" alt="" />
+            <img src="../public/logo.png" alt="" />
             <br />
             <span
               >Glimmer is one of the most Elegant, Clean and Creative WordPress
@@ -42,31 +43,29 @@ import { dataContent } from "../../data/data";
         </div>
       </div>
       <div class="footer-common-widget">
-        {
-          dataContent.map((item) => (
-            <div class="box-footer-common-widget">
-              <div class="widget-title">
-                <h3>Recent in Fashion</h3>
-              </div>
+        <div class="box-footer-common-widget">
+          <div class="widget-title">
+            <h3>Recent in Fashion</h3>
+          </div>
+          {
+            dataFooter.map((item) => (
               <div class="box-cart-footer">
                 <div class="box-cart-footer-img">
                   <img src={item.imageSrc} alt="" />
                 </div>
                 <div class="box-cart-footer-infor">
-                  <a href="">
-                    {item.postTitle}
-                  </a>
+                  <a href="">{item.postTitle}</a>
                   <br />
                   <span>{item.date}</span>
                 </div>
               </div>
-            </div>
-          ))
-        }
+            ))
+          }
+        </div>
       </div>
     </div>
     <div class="footer-bottom">
-      <span>CREATED BY</span><p>SORATEMPLATES</p>
+      <span>CREATED BY</span><p>Meta Technology</p>
     </div>
   </body>
   <html></html>

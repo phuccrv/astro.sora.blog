@@ -81,7 +81,7 @@ import "./HeaderTop.css";
       </div>
       <div class="header-header">
         <div class="header-logo">
-          <h1>Sora Blog</h1>
+          <h1>Meta Technology</h1>
         </div>
       </div>
       <div class="icon-menu-drop" id="menu-icon">
@@ -98,16 +98,15 @@ import "./HeaderTop.css";
       </div>
       <div class="header-menu">
         <ul class="main-menu-nav">
-          <li><a href="../../pages/index.astro">Home</a></li>
-          <li><a href="">Features</a></li>
-          <li><a href="">Mega Menu</a></li>
-          <li><a href="">Documentation</a></li>
-          <li><a href="">Download This Template</a></li>
+          <li><a href="/">Home</a></li>
+          <li><a href="">Contact Us</a></li>
+          <li><a href="">Privacy Policy</a></li>
+          <li><a href="">Terms of Service</a></li>
+          <li><a href="">Aboul</a></li>
         </ul>
       </div>
-      
       <div class="title-header">
-        <h3>HI, WE ARE SORA BLOG / THE PLACE WHERE WE WRITE SOME WORDS</h3>
+        <h3>We are team of IT solution provider</h3>
       </div>
     </div>
   </body>
@@ -121,5 +120,24 @@ import "./HeaderTop.css";
       });
     });
 
+
+    document.addEventListener("DOMContentLoaded", function () {
+    var menuIcon = document.getElementById("menu-icon");
+    var menu = document.querySelector(".main-menu-nav");
+    var header = document.querySelector(".header-menu");
+    var scrollOffset = 100; // Điều kiện kéo xuống 100px
+
+    menuIcon.addEventListener("click", function () {
+      menu.classList.toggle("show-menu");
+    });
+
+    window.addEventListener("scroll", function () {
+      if (window.scrollY >= scrollOffset) {
+        header.classList.add("sticky-header");
+      } else {
+        header.classList.remove("sticky-header");
+      }
+    });
+  });
   </script>
 </html>

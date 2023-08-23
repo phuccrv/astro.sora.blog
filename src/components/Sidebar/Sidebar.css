@@ -31,7 +31,10 @@
     border-radius: 5px;
     text-align: center;
   }
-  
+  .widget-content img{
+    border-radius: 50%;
+    object-fit: cover;
+  }
   .widget-title h3 {
     margin: 10px;
     text-align: center;

@@ -14,6 +14,13 @@
   padding: 0;
   box-sizing: border-box;
 }
+.sticky-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
 
 .container {
   display: flex;
@@ -27,6 +34,8 @@
   color: var(--icon-menu-color);
   cursor: pointer;
 }
+
+#top-bar{display: none;}
 
 /* .top-bar-nav ul {
     display: flex;
@@ -116,6 +125,7 @@
   font-weight: 500;
   text-align: center;
   width: 100%;
+  text-transform: uppercase;
 }
 
 .show-menu {

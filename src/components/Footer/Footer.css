@@ -45,6 +45,7 @@
     width: 330px;
     height: 200px;
     border-radius: 5px;
+    object-fit: cover;
   }
   
   .widget-content ul li {
@@ -60,6 +61,7 @@
   
   .box-cart-footer {
     display: flex;
+    margin-bottom: 10px;
   }
   
   .box-cart-footer-img img {
