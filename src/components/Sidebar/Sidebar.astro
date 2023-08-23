@@ -1,6 +1,6 @@
 ---
 import "./Sidebar.css";
-import { dataContent } from "../../data/data";
+import { dataContent,dataMeta } from "../../data/data";
 import Facebook from "../vsg/Facebook.astro";
 import Twitter from "../vsg/Twitter.astro";
 import Pinterest from "../vsg/Pinterest.astro";
@@ -29,14 +29,13 @@ import Youtube from "../vsg/Youtube.astro";
         <div class="title">
           <h3>About Meta</h3>
         </div>
-        <div class="widget-content">
-          <a href=""><img src="/public/logo.png" alt="" /></a>
-          <br />
-          <span
-            >Lorem ipsum dolor sit amet Cras vitae nibh nisl. Cras etwmaur is
-            egettobsi lorem ultricies ferme ntutbm a in diam. Morbi mollis
-          </span>
-        </div>
+        {dataMeta.length > 0  && dataMeta.map((item)=>(
+          <div class="widget-content">
+            <a href=""><img src={item.imageLogo} alt="" /></a>
+            <br />
+            <span>{item.titleInfor}</span>
+          </div>
+        ))}
       </div>
       <div class="widgetLinkList">
         <div class="widget-title">

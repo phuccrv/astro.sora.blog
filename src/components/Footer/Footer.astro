@@ -1,6 +1,6 @@
 ---
 import "./Footer.css";
-import { dataFooter } from "../../data/data";
+import { dataFooter,dataMeta } from "../../data/data";
 ---
 
 <!DOCTYPE html>
@@ -20,14 +20,14 @@ import { dataFooter } from "../../data/data";
           <div class="widget-title">
             <h3>About Meta Technology</h3>
           </div>
-          <div class="widgetcontent">
-            <img src="/public/logo.png" alt="" />
-            <br />
-            <span
-              >Glimmer is one of the most Elegant, Clean and Creative WordPress
-              blog.</span
-            >
-          </div>
+          {dataMeta.length >0 && dataMeta.map((item)=>(
+
+            <div class="widgetcontent">
+              <img src={item.imageLogo} alt="" />
+              <br />
+              <span>{item.titleInfor}</span>
+            </div>
+          ))}
         </div>
       </div>
       <div class="footer-common-widget">

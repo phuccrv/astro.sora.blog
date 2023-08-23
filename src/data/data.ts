@@ -79,3 +79,10 @@ export const dataFooter = [
     imageSrc: 'https://thuthuatnhanh.com/wp-content/uploads/2020/09/tai-anh-nen-cong-nghe-cho-pc.jpg',
   },
 ]
+
+export const dataMeta =[
+  {
+    imageLogo: 'https://pngimg.com/uploads/meta/meta_PNG12.png',
+    titleInfor: 'Lorem ipsum dolor sit amet Cras vitae nibh nisl. Cras etwmaur is egettobsi lorem ultricies ferme ntutbm a in diam. Morbi mollis'
+  }
+]

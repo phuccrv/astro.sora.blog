@@ -36,15 +36,9 @@
     text-align: center;
     margin: 10px 0px;
   }
-  
-  .widgetcontent {
-    /* background-image: url(../../../public/logo.png); */
-    /* background-size: contain;
-    background-repeat: no-repeat; */
-  }
 
   .widgetcontent img{
-    width: 330px;
+    width: 310px;
     height: 200px;
     border-radius: 5px;
     object-fit: cover;
