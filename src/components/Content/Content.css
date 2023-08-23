@@ -63,7 +63,7 @@
   
   .post-meta span a {
     text-transform: capitalize;
-    color: var(--meta-color);
+    color: var(--link-color);
     font-size: 14px;
     letter-spacing: 0.04em;
     font-style: italic;
@@ -77,6 +77,7 @@
     content: "/";
     color: var(--divider-color);
     margin: 0px 5px;
+    color: #000;
   }
   
   .post-snippet {
