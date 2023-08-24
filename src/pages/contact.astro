@@ -1,0 +1,57 @@
+---
+import Sidebar from "../components/Sidebar/Sidebar.astro";
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Product Contact">
+  <div class="contact-all">
+    <div class="infor-contact">
+      <h1>Contact</h1>
+      <form action="">
+        <input type="text" placeholder="Name..." />
+        <input type="email" placeholder="Email..." />
+        <br />
+        <textarea name="" id="" cols="30" rows="10"></textarea>
+        <br />
+        <button type="submit">SEND</button>
+      </form>
+    </div>
+    <div class="sidebar">
+      <Sidebar />
+    </div>
+  </div>
+</Layout>
+<style>
+  .contact-all {
+    display: flex;
+    margin: 10px 100px;
+  }
+  .infor-contact {
+    background-color: white;
+    height: 100vh;
+  }
+  .infor-contact h1 {
+    font-size: 30px;
+    border-bottom: 1px solid #ccc;
+    margin: 20px 0px;
+  }
+  form input {
+    width: 399px;
+    height: 40px;
+    border: none;
+    padding: 0px 10px;
+    margin-bottom: 20px;
+  }
+  textarea {
+    border-color: #ccc;
+    margin-bottom: 10px;
+  }
+
+  form button {
+    background-color: #0f8532dd;
+    color: white;
+    border: none;
+    width: 100%;
+    padding: 10px;
+  }
+</style>

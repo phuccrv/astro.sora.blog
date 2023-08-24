@@ -1,143 +1,127 @@
 ---
 import ThemeIcon from "../ThemeIcon/ThemeIcon.astro";
 import "./HeaderTop.css";
-
 ---
 
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="description" content="Astro description" />
-    <meta name="viewport" content="width=device-width" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="generator" content={Astro.generator} />
-    <title>header</title>
-  </head>
-  <body>
-    <div class="all-header">
-      <div id="top-bar">
-        <div class="container">
-          <div class="top-bar-nav">
-            <ul>
-              <li>home</li>
-              <li>about</li>
-              <li>contact</li>
-            </ul>
-          </div>
-          <div class="top-bar-social">
-            <ul>
-              <li class="facebook">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="15"
-                  height="15"
-                  viewBox="0 0 16 16"
-                  ><path
-                    fill="currentColor"
-                    d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131c.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"
-                  ></path></svg>
-              </li>
-              <li class="twitter">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="15"
-                  height="15"
-                  viewBox="0 0 20 20"
-                  ><path
-                    fill="currentColor"
-                    d="M17.316 6.246c.008.162.011.326.011.488c0 4.99-3.797 10.742-10.74 10.742c-2.133 0-4.116-.625-5.787-1.697a7.577 7.577 0 0 0 5.588-1.562a3.779 3.779 0 0 1-3.526-2.621a3.858 3.858 0 0 0 1.705-.065a3.779 3.779 0 0 1-3.028-3.703v-.047a3.766 3.766 0 0 0 1.71.473a3.775 3.775 0 0 1-1.168-5.041a10.716 10.716 0 0 0 7.781 3.945a3.813 3.813 0 0 1-.097-.861a3.773 3.773 0 0 1 3.774-3.773a3.77 3.77 0 0 1 2.756 1.191a7.602 7.602 0 0 0 2.397-.916a3.789 3.789 0 0 1-1.66 2.088a7.55 7.55 0 0 0 2.168-.594a7.623 7.623 0 0 1-1.884 1.953z"
-                  ></path></svg>
-              </li>
-              <li class="instagram">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="15"
-                  height="15"
-                  viewBox="0 0 256 256"
-                  ><path
-                    fill="currentColor"
-                    d="M176 24H80a56.06 56.06 0 0 0-56 56v96a56.06 56.06 0 0 0 56 56h96a56.06 56.06 0 0 0 56-56V80a56.06 56.06 0 0 0-56-56Zm-48 152a48 48 0 1 1 48-48a48.05 48.05 0 0 1-48 48Zm60-96a12 12 0 1 1 12-12a12 12 0 0 1-12 12Zm-28 48a32 32 0 1 1-32-32a32 32 0 0 1 32 32Z"
-                  ></path></svg>
-              </li>
-              <li class="pinterest">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="15"
-                  height="15"
-                  viewBox="0 0 24 24"
-                  ><path
-                    fill="currentColor"
-                    d="M9.04 21.54c.96.29 1.93.46 2.96.46a10 10 0 0 0 10-10A10 10 0 0 0 12 2A10 10 0 0 0 2 12c0 4.25 2.67 7.9 6.44 9.34c-.09-.78-.18-2.07 0-2.96l1.15-4.94s-.29-.58-.29-1.5c0-1.38.86-2.41 1.84-2.41c.86 0 1.26.63 1.26 1.44c0 .86-.57 2.09-.86 3.27c-.17.98.52 1.84 1.52 1.84c1.78 0 3.16-1.9 3.16-4.58c0-2.4-1.72-4.04-4.19-4.04c-2.82 0-4.48 2.1-4.48 4.31c0 .86.28 1.73.74 2.3c.09.06.09.14.06.29l-.29 1.09c0 .17-.11.23-.28.11c-1.28-.56-2.02-2.38-2.02-3.85c0-3.16 2.24-6.03 6.56-6.03c3.44 0 6.12 2.47 6.12 5.75c0 3.44-2.13 6.2-5.18 6.2c-.97 0-1.92-.52-2.26-1.13l-.67 2.37c-.23.86-.86 2.01-1.29 2.7v-.03Z"
-                  ></path></svg>
-              </li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="dark-line"  >
-          <ThemeIcon/>
-        </div>
-      </div>
-      <div class="header-header">
-        <div class="header-logo">
-          <h1>Meta Technology</h1>
-        </div>
-      </div>
-      <div class="icon-menu-drop" id="menu-icon">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="32"
-          height="32"
-          viewBox="0 0 24 24"
-          ><path
-            fill="currentColor"
-            d="M5 10h10c.55 0 1 .45 1 1s-.45 1-1 1H5c-.55 0-1-.45-1-1s.45-1 1-1zm0-4h10c.55 0 1 .45 1 1s-.45 1-1 1H5c-.55 0-1-.45-1-1s.45-1 1-1zm0 8h6c.55 0 1 .45 1 1s-.45 1-1 1H5c-.55 0-1-.45-1-1s.45-1 1-1zm9 .88v4.23c0 .39.42.63.76.43l3.53-2.12c.32-.19.32-.66 0-.86l-3.53-2.12a.508.508 0 0 0-.76.44z"
-          ></path></svg
-        >
-      </div>
-      <div class="header-menu">
-        <ul class="main-menu-nav">
-          <li><a href="/">Home</a></li>
-          <li><a href="">Contact Us</a></li>
-          <li><a href="">Privacy Policy</a></li>
-          <li><a href="">Terms of Service</a></li>
-          <li><a href="">Aboul</a></li>
+<div class="all-header">
+  <div id="top-bar">
+    <div class="container">
+      <div class="top-bar-nav">
+        <ul>
+          <li>home</li>
+          <li>about</li>
+          <li>contact</li>
         </ul>
       </div>
-      <div class="title-header">
-        <h3>We are team of IT solution provider</h3>
+      <div class="top-bar-social">
+        <ul>
+          <li class="facebook">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="15"
+              height="15"
+              viewBox="0 0 16 16"
+              ><path
+                fill="currentColor"
+                d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131c.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"
+              ></path></svg
+            >
+          </li>
+          <li class="twitter">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="15"
+              height="15"
+              viewBox="0 0 20 20"
+              ><path
+                fill="currentColor"
+                d="M17.316 6.246c.008.162.011.326.011.488c0 4.99-3.797 10.742-10.74 10.742c-2.133 0-4.116-.625-5.787-1.697a7.577 7.577 0 0 0 5.588-1.562a3.779 3.779 0 0 1-3.526-2.621a3.858 3.858 0 0 0 1.705-.065a3.779 3.779 0 0 1-3.028-3.703v-.047a3.766 3.766 0 0 0 1.71.473a3.775 3.775 0 0 1-1.168-5.041a10.716 10.716 0 0 0 7.781 3.945a3.813 3.813 0 0 1-.097-.861a3.773 3.773 0 0 1 3.774-3.773a3.77 3.77 0 0 1 2.756 1.191a7.602 7.602 0 0 0 2.397-.916a3.789 3.789 0 0 1-1.66 2.088a7.55 7.55 0 0 0 2.168-.594a7.623 7.623 0 0 1-1.884 1.953z"
+              ></path></svg
+            >
+          </li>
+          <li class="instagram">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="15"
+              height="15"
+              viewBox="0 0 256 256"
+              ><path
+                fill="currentColor"
+                d="M176 24H80a56.06 56.06 0 0 0-56 56v96a56.06 56.06 0 0 0 56 56h96a56.06 56.06 0 0 0 56-56V80a56.06 56.06 0 0 0-56-56Zm-48 152a48 48 0 1 1 48-48a48.05 48.05 0 0 1-48 48Zm60-96a12 12 0 1 1 12-12a12 12 0 0 1-12 12Zm-28 48a32 32 0 1 1-32-32a32 32 0 0 1 32 32Z"
+              ></path></svg
+            >
+          </li>
+          <li class="pinterest">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="15"
+              height="15"
+              viewBox="0 0 24 24"
+              ><path
+                fill="currentColor"
+                d="M9.04 21.54c.96.29 1.93.46 2.96.46a10 10 0 0 0 10-10A10 10 0 0 0 12 2A10 10 0 0 0 2 12c0 4.25 2.67 7.9 6.44 9.34c-.09-.78-.18-2.07 0-2.96l1.15-4.94s-.29-.58-.29-1.5c0-1.38.86-2.41 1.84-2.41c.86 0 1.26.63 1.26 1.44c0 .86-.57 2.09-.86 3.27c-.17.98.52 1.84 1.52 1.84c1.78 0 3.16-1.9 3.16-4.58c0-2.4-1.72-4.04-4.19-4.04c-2.82 0-4.48 2.1-4.48 4.31c0 .86.28 1.73.74 2.3c.09.06.09.14.06.29l-.29 1.09c0 .17-.11.23-.28.11c-1.28-.56-2.02-2.38-2.02-3.85c0-3.16 2.24-6.03 6.56-6.03c3.44 0 6.12 2.47 6.12 5.75c0 3.44-2.13 6.2-5.18 6.2c-.97 0-1.92-.52-2.26-1.13l-.67 2.37c-.23.86-.86 2.01-1.29 2.7v-.03Z"
+              ></path></svg
+            >
+          </li>
+        </ul>
       </div>
     </div>
-  </body>
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      var menuIcon = document.getElementById("menu-icon");
-      var menu = document.querySelector(".main-menu-nav");
 
-      menuIcon.addEventListener("click", function () {
-        menu.classList.toggle("show-menu");
-      });
-    });
+    <div class="dark-line">
+      <ThemeIcon />
+    </div>
+  </div>
+  <div class="header-header">
+    <div class="header-logo">
+      <h1>Meta Technology</h1>
+    </div>
+  </div>
+  <div class="icon-menu-drop" id="menu-icon">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="32"
+      height="32"
+      viewBox="0 0 24 24"
+      ><path
+        fill="currentColor"
+        d="M5 10h10c.55 0 1 .45 1 1s-.45 1-1 1H5c-.55 0-1-.45-1-1s.45-1 1-1zm0-4h10c.55 0 1 .45 1 1s-.45 1-1 1H5c-.55 0-1-.45-1-1s.45-1 1-1zm0 8h6c.55 0 1 .45 1 1s-.45 1-1 1H5c-.55 0-1-.45-1-1s.45-1 1-1zm9 .88v4.23c0 .39.42.63.76.43l3.53-2.12c.32-.19.32-.66 0-.86l-3.53-2.12a.508.508 0 0 0-.76.44z"
+      ></path></svg
+    >
+  </div>
+  <div class="header-menu">
+    <ul class="main-menu-nav">
+      <li><a href="/">Home</a></li>
+      <li><a href="/contact">Contact Us</a></li>
+      <li><a href="">Privacy Policy</a></li>
+      <li><a href="">Terms of Service</a></li>
+      <li><a href="">Aboul</a></li>
+    </ul>
+  </div>
+  <div class="title-header">
+    <h3>We are team of IT solution provider</h3>
+  </div>
+</div>
 
-
-    document.addEventListener("DOMContentLoaded", function () {
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
     var menuIcon = document.getElementById("menu-icon");
     var menu = document.querySelector(".main-menu-nav");
+
+    menuIcon?.addEventListener("click", function () {
+      menu?.classList.toggle("show-menu");
+    });
+  });
+
+  document.addEventListener("DOMContentLoaded", function () {
     var header = document.querySelector(".header-menu");
     var scrollOffset = 100; // Điều kiện kéo xuống 100px
 
-    menuIcon.addEventListener("click", function () {
-      menu.classList.toggle("show-menu");
-    });
-
     window.addEventListener("scroll", function () {
       if (window.scrollY >= scrollOffset) {
-        header.classList.add("sticky-header");
+        header?.classList.add("sticky-header");
       } else {
-        header.classList.remove("sticky-header");
+        header?.classList.remove("sticky-header");
       }
     });
   });
-  </script>
-</html>
+</script>

@@ -1,0 +1,88 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import data from "../../data/data.json";
+import Sidebar from "../../components/Sidebar/Sidebar.astro";
+import MtRight from "../../components/vsg/MtRight.astro";
+import "../blog/slug.css";
+
+const { slug } = Astro.params;
+const post = data.dataContent.filter(
+  (post: any) => post.slug === Number(slug)
+)[0];
+console.log(post);
+---
+
+<Layout title={post?.postTitle ?? "Product Detail"}>
+  <div class="detail">
+    <div class="content-detail">
+      <div class="title-detail">
+        <h1>{post.postTitle}</h1>
+        <div class="title-smole">
+          {post.postCategory}
+          <span>/</span>
+          {post.author}
+          <span>/</span>
+          {post.date}
+        </div>
+      </div>
+      <div class="img-detail">
+        <img src={post.imageSrc} alt="" />
+      </div>
+      <div class="text-post">
+        {post.postSnippet}
+      </div>
+      <br />
+      <div class="text-post post-care">
+        <span>"</span>{post.postSnippet}<span>"</span>
+      </div>
+      <br />
+      <div class="trick">
+        <p><MtRight />{post.trickOne}</p>
+        <p><MtRight />{post.trickTwo}</p>
+        <p><MtRight />{post.trickThree}</p>
+      </div>
+      <br />
+      <div class="text-post">
+        <p>{post.inforText}</p>
+        <br />
+        <p>{post.inforText}</p>
+        <br />
+        <p>{post.inforText}</p>
+      </div>
+      <div class="tag">
+        <a href="">tag</a>
+        <a href="">data</a>
+      </div>
+      <div class="box-comment">
+        <img src={post.imageSrc} alt="" />
+        <div class="text-comment">
+          <p>CREATED BY <span>Meta Technology</span></p>
+          <p>{post.infor}</p>
+        </div>
+      </div>
+      <div class="postComment"><p>POST A COMMENT</p></div>
+      <!-- comment -->
+      {
+        post.comment.map((itemComment) => (
+          <div class="comment">
+            <div class="comment-img">
+              <img src={post.imageSrc} alt="" />
+            </div>
+            <div class="title-comment">
+              <h4>{itemComment.nameComment}</h4>
+              <p>{itemComment.dateComnent}</p>
+              <h5>This Is First Testing Comment</h5>
+              <div class="btn-comment">
+                <a href="">Reply</a>
+                <a href="">delete</a>
+              </div>
+            </div>
+          </div>
+        ))
+      }
+    </div>
+    <div class="sidebar">
+      <Sidebar />
+    </div>
+  </div>
+</Layout>

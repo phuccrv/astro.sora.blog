@@ -1,29 +1,21 @@
 ---
-import Content from '../components/Content/Content.astro';
-import HeaderTop from '../components/HeaderTop/HeaderTop.astro';
-import Sidebar from '../components/Sidebar/Sidebar.astro';
-import Footer from '../components/Footer/Footer.astro'
-import Layout from '../layouts/Layout.astro';
-import {dataContent} from '../data/data'
-
+import Content from "../components/Content/Content.astro";
+import Sidebar from "../components/Sidebar/Sidebar.astro";
+import Layout from "../layouts/Layout.astro";
 ---
 
-<Layout title="Welcome newblog">
-	<main>
-		<HeaderTop />
-		<div class="all-content">
-			<Content Contentdata={dataContent}/>
-			<Sidebar/>
-		</div>
-		<Footer/>
-	</main>
+<Layout title="Meta Technology">
+  <div class="all-content">
+    <Content />
+    <Sidebar />
+  </div>
 </Layout>
 
 <style>
-	.all-content{
-		display: flex;
-	}
-	main{
-		overflow-x: hidden;
-	}
+  .all-content {
+    display: flex;
+  }
+  main {
+    overflow-x: hidden;
+  }
 </style>

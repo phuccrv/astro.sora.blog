@@ -1,6 +1,6 @@
 ---
 import "./Sidebar.css";
-import { dataContent,dataMeta } from "../../data/data";
+import data from "../../data/data.json";
 import Facebook from "../vsg/Facebook.astro";
 import Twitter from "../vsg/Twitter.astro";
 import Pinterest from "../vsg/Pinterest.astro";
@@ -10,7 +10,6 @@ import Vk from "../vsg/Vk.astro";
 import Instagram from "../vsg/Instagram.astro";
 import Youtube from "../vsg/Youtube.astro";
 // console.log(dataContent);
-
 ---
 
 <!DOCTYPE html>
@@ -29,13 +28,18 @@ import Youtube from "../vsg/Youtube.astro";
         <div class="title">
           <h3>About Meta</h3>
         </div>
-        {dataMeta.length > 0  && dataMeta.map((item)=>(
-          <div class="widget-content">
-            <a href=""><img src={item.imageLogo} alt="" /></a>
-            <br />
-            <span>{item.titleInfor}</span>
-          </div>
-        ))}
+        {
+          data.dataMeta.length > 0 &&
+            data.dataMeta.map((item) => (
+              <div class="widget-content">
+                <a href="">
+                  <img src={item.imageLogo} alt="" />
+                </a>
+                <br />
+                <span>{item.titleInfor}</span>
+              </div>
+            ))
+        }
       </div>
       <div class="widgetLinkList">
         <div class="widget-title">
@@ -44,30 +48,30 @@ import Youtube from "../vsg/Youtube.astro";
         <div class="widget-content">
           <div class="link-app-top">
             <div class="facebook icon-link">
-              <Facebook/>
+              <Facebook />
             </div>
             <div class="twitter icon-link">
-              <Twitter/>
+              <Twitter />
             </div>
             <div class="pinterest icon-link">
-              <Pinterest/>
+              <Pinterest />
             </div>
             <div class="whatsapp icon-link">
-             <Whatsapp/>
+              <Whatsapp />
             </div>
           </div>
           <div class="link-app-bt">
             <div class="reddit icon-link">
-              <Reddit/>
+              <Reddit />
             </div>
             <div class="vk icon-link">
-              <Vk/>
+              <Vk />
             </div>
             <div class="instagram icon-link">
-              <Instagram/>
+              <Instagram />
             </div>
             <div class="youtube icon-link">
-              <Youtube/>
+              <Youtube />
             </div>
           </div>
         </div>
@@ -76,36 +80,42 @@ import Youtube from "../vsg/Youtube.astro";
         <div class="PopularPosts-title">
           <h3>Popular Posts</h3>
         </div>
-        {dataContent.map((item) => (
-          <div class="PopularPosts-box">
-            <div class="PopularPosts-img">
-              <a href="">
-                <img src={item.imageSrc} alt="" />
-              </a>
-            </div>
-            <div class="PopularPosts-infor">
-              <h2>
-                <a href="">{item.postTitle}</a>
-              </h2>
-              <div class="post-meta">
-                <span>{item.date}</span>
+        {
+          data.dataContent.map((item) => (
+            <div class="PopularPosts-box">
+              <div class="PopularPosts-img">
+                <a href="">
+                  <img src={item.imageSrc} alt="" />
+                </a>
+              </div>
+              <div class="PopularPosts-infor">
+                <h2>
+                  <a href="">{item.postTitle}</a>
+                </h2>
+                <div class="post-meta">
+                  <span>{item.date}</span>
+                </div>
               </div>
             </div>
-          </div>
-        ))}
+          ))
+        }
       </div>
       <div class="Labels">
         <div class="Labels-title">
-          <h3>
-            Labels
-          </h3>
-          {dataContent.length >0 && dataContent.map((item)=>(
-
-            <div class="item-Labels">
-              <span><a href="">{item.postCategory}</a></span>
-              <a href="" class="poist-item-labels">{item.numberPage}</a>
-            </div>
-          ))}
+          <h3>Labels</h3>
+          {
+            data.dataContent.length > 0 &&
+              data.dataContent.map((item) => (
+                <div class="item-Labels">
+                  <span>
+                    <a href="">{item.postCategory}</a>
+                  </span>
+                  <a href="" class="poist-item-labels">
+                    {item.numberPage}
+                  </a>
+                </div>
+              ))
+          }
         </div>
       </div>
     </div>

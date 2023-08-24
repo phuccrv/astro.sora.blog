@@ -1,8 +1,7 @@
 ---
 import "./Content.css";
-import { dataContent } from "../../data/data";
+import { dataContent } from "../../data/data.json";
 ---
-
 
 <!DOCTYPE html>
 <html lang="en">
@@ -18,9 +17,9 @@ import { dataContent } from "../../data/data";
     <div id="content-wrapper">
       {
         dataContent.map((item) => (
-          <div id="main-wrapper" >
+          <div id="main-wrapper">
             <div class="img-content">
-              <a href="">
+              <a href={`/blog/${item.slug}`}>
                 <img src={item.imageSrc} alt="ảnh content" />
               </a>
             </div>
@@ -39,10 +38,8 @@ import { dataContent } from "../../data/data";
                   <a href="">{item.date}</a>
                 </span>
               </div>
-              <p class="post-snippet">
-                {item.postSnippet}
-              </p>
-              <a href={`/post/${item.id}`} class="read-more">
+              <p class="post-snippet">{item.postSnippet}</p>
+              <a href={`/blog/${item.slug}`} class="read-more">
                 Continue Reading
               </a>
               <div class="social">
@@ -148,5 +145,6 @@ import { dataContent } from "../../data/data";
       </div>
     </div>
   </body>
+
 
 </html>

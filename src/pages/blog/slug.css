@@ -1,0 +1,171 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.detail {
+    display: flex;
+    margin: 0px 100px;
+    background-color: white;
+    padding: 10px;
+}
+
+.title-detail h1 {
+    font-size: 25px;
+}
+
+.img-detail {
+    width: 99%;
+    height: 600px;
+    margin: 20px 0px;
+}
+
+.img-detail img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 3px;
+}
+
+.text-post {
+    /* margin-bottom: 20px; */
+}
+
+.post-care span {
+    font-size: 25px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.post-care {
+    border-left: 5px solid #893a89;
+    padding: 5px;
+    line-height: 16px;
+    font-style: italic;
+    color: rgb(90, 90, 90);
+}
+
+.tag a {
+    text-decoration: none;
+    border: 1px solid #000000;
+    color: #000000;
+    padding: 5px 20px;
+    border-radius: 5px;
+    display: inline-block;
+    margin: 10px 0px;
+    width: 80px;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.tag a:nth-child(1) {
+    background-color: #000000;
+    color: white;
+}
+
+.tag a:nth-child(2) {
+    color: #893a89;
+}
+
+.box-comment {
+    display: flex;
+}
+
+.box-comment img {
+    width: 100px;
+    height: 80px;
+    object-fit: cover;
+}
+
+.text-comment p {
+    margin: 0px 0px 10px 10px;
+}
+
+.text-comment span {
+    color: #893a89;
+}
+
+.text-comment p:last-child {
+    font-size: 15px;
+    color: rgb(78, 78, 78);
+    font-style: italic;
+}
+
+.postComment {
+    background-color: #000000;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin: 20px 0px;
+}
+
+.comment {
+    display: flex;
+    margin: 10px 0px;
+}
+
+.comment-img img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.title-comment {
+    margin-left: 10px;
+    width: 100%;
+}
+
+.title-comment p {
+    font-size: 12px;
+    font-style: italic;
+    border-bottom: 1px dashed #893a89;
+    margin: 5px 0px;
+}
+
+.title-comment h5,
+.btn-comment {
+    margin: 5px;
+}
+
+.btn-comment a {
+    text-decoration: none;
+    font-size: 15px;
+    border: 1px solid;
+    padding: 2px;
+    border-radius: 3px;
+}
+
+.btn-comment a:first-child {
+    color: #4490c0;
+}
+
+.btn-comment a:last-child {
+    color: #c04444;
+}
+
+@media screen and (min-width:375px) {
+    .sidebar {
+        display: none;
+    }
+
+    .title-detail h1 {
+        font-size: 20px;
+    }
+
+    .detail {
+        margin: 20px 10px;
+    }
+}
+
+@media screen and (min-width:1024px) {
+    .sidebar {
+        display: block;
+    }
+}
+
+@media screen and (min-width:1124px) and (max-width:1492px) {
+    .detail {
+        margin: 20px 100px;
+    }
+}
