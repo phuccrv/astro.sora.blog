@@ -18,11 +18,7 @@ import { dataContent } from "../../data/data.json";
       {
         dataContent.map((item) => (
           <div id="main-wrapper">
-            <div class="img-content">
-              <a href={`/blog/${item.slug}`}>
-                <img src={item.imageSrc} alt="ảnh content" />
-              </a>
-            </div>
+            <div class="img-content"></div>
             <div class="post-info">
               <h2 class="post-title">
                 <a href={`/blog/${item.slug}`}>{item.postTitle}</a>
