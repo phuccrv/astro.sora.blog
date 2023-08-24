@@ -83,14 +83,10 @@ import Youtube from "../../components/vsg/Youtube.astro";
         {
           data.dataContent.map((item) => (
             <div class="PopularPosts-box">
-              <div class="PopularPosts-img">
-                <a href="">
-                  <img src={item.imageSrc} alt="" />
-                </a>
-              </div>
+              <div class="PopularPosts-img" />
               <div class="PopularPosts-infor">
                 <h2>
-                  <a href="">{item.postTitle}</a>
+                  <a href={`/blog/${item.slug}`}>{item.postTitle}</a>
                 </h2>
                 <div class="post-meta">
                   <span>{item.date}</span>
@@ -120,5 +116,4 @@ import Youtube from "../../components/vsg/Youtube.astro";
       </div>
     </div>
   </body>
-</html>
 </html>
