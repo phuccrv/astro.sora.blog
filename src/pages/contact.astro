@@ -27,7 +27,13 @@ import Layout from "../layouts/Layout.astro";
     margin: 10px 100px;
   }
   .infor-contact {
-    height: 100vh;
+    margin-top: 20px;
+    height: 400px;
+    background-color: white;
+    border-radius: 5px;
+    -webkit-box-shadow: 1px 0px 5px 4px rgba(199, 199, 199, 0.15);
+    -moz-box-shadow: 1px 0px 5px 4px rgba(199, 199, 199, 0.15);
+    box-shadow: 1px 0px 5px 4px rgba(199, 199, 199, 0.15);
   }
   .infor-contact h1 {
     font-size: 30px;
@@ -35,6 +41,11 @@ import Layout from "../layouts/Layout.astro";
     margin: 20px 0px;
     text-align: center;
   }
+
+  form {
+    padding: 10px;
+  }
+
   form input {
     width: 350px;
     height: 40px;
@@ -53,10 +64,12 @@ import Layout from "../layouts/Layout.astro";
   form button {
     background-color: #0f8532dd;
     color: white;
-    border: none;
     width: 100%;
     padding: 10px;
     cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+    border: none;
   }
   form button:hover {
     background-color: #1e9e44dd;
