@@ -36,15 +36,18 @@ import Layout from "../layouts/Layout.astro";
     text-align: center;
   }
   form input {
-    width: 399px;
+    width: 350px;
     height: 40px;
-    border: none;
+    border: 1px solid #c9c9c9;
+    border-radius: 5px;
     padding: 0px 10px;
     margin-bottom: 20px;
   }
   textarea {
     border-color: #ccc;
     margin-bottom: 10px;
+    width: 100%;
+    border-radius: 5px;
   }
 
   form button {
@@ -58,5 +61,56 @@ import Layout from "../layouts/Layout.astro";
   form button:hover {
     background-color: #1e9e44dd;
     transition: 0.2s ease-in-out;
+  }
+  @media screen and (min-width: 375px) and (max-width: 480px) {
+    .sidebar {
+      display: none;
+    }
+    .contact-all {
+      margin: 20px 20px;
+    }
+    form input {
+      width: 100%;
+    }
+  }
+  @media screen and (min-width: 480px) and (max-width: 800px) {
+    .sidebar {
+      display: none;
+    }
+    form input {
+      width: 100%;
+    }
+    .contact-all {
+      margin: 50px 20px 100px 20px;
+    }
+    .infor-contact {
+      width: 100%;
+    }
+    .infor-contact button {
+      margin-bottom: 20px;
+    }
+  }
+  @media screen and (min-width: 800px) and (max-width: 1024px) {
+    .sidebar {
+      display: none;
+    }
+    form input {
+      width: 100%;
+    }
+    .contact-all {
+      margin: 50px 20px 100px 20px;
+    }
+    .infor-contact {
+      width: 100%;
+    }
+    .infor-contact button {
+      margin-bottom: 20px;
+    }
+  }
+  @media screen and (min-width: 1024px) and (max-width: 1492px) {
+    .contact-all {
+      margin: 20px 100px;
+      justify-content: center;
+    }
   }
 </style>

@@ -1,6 +1,6 @@
 ---
-import Footer from '../components/Footer/Footer.astro';
-import HeaderTop from '../components/HeaderTop/HeaderTop.astro';
+import Footer from "../components/Footer/Footer.astro";
+import HeaderTop from "../components/HeaderTop/HeaderTop.astro";
 interface Props {
   title: string;
 }
@@ -8,7 +8,7 @@ interface Props {
 const { title } = Astro.props;
 ---
 
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -21,9 +21,9 @@ const { title } = Astro.props;
   <body>
     <main>
       <HeaderTop />
-    <slot />
-    <Footer/>
-	</main>
+      <slot />
+      <Footer />
+    </main>
   </body>
 </html>
 <style is:global>
@@ -37,7 +37,7 @@ const { title } = Astro.props;
       rgb(var(--accent-light)) 30%,
       white 60%
     );
-    --background-color: #f4f4f4;
+    --background-color: #fdfafa;
   }
 
   html {
@@ -55,7 +55,7 @@ const { title } = Astro.props;
       Courier New,
       monospace;
   }
-    html.dark {
+  html.dark {
     background-color: #706a83;
     color: #fff;
     transition: 0.5s ease-in-out;
