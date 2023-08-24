@@ -27,13 +27,13 @@ import Layout from "../layouts/Layout.astro";
     margin: 10px 100px;
   }
   .infor-contact {
-    background-color: white;
     height: 100vh;
   }
   .infor-contact h1 {
     font-size: 30px;
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid #050505;
     margin: 20px 0px;
+    text-align: center;
   }
   form input {
     width: 399px;
@@ -53,5 +53,10 @@ import Layout from "../layouts/Layout.astro";
     border: none;
     width: 100%;
     padding: 10px;
+    cursor: pointer;
+  }
+  form button:hover {
+    background-color: #1e9e44dd;
+    transition: 0.2s ease-in-out;
   }
 </style>
