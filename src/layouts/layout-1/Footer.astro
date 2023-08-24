@@ -1,9 +1,9 @@
 ---
-import "./Footer.css";
-import { dataFooter,dataMeta } from "../../data/data.json";
+import "./styles.css";
+import { dataFooter, dataMeta } from "../../data/data.json";
 ---
 
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -20,14 +20,16 @@ import { dataFooter,dataMeta } from "../../data/data.json";
           <div class="widget-title">
             <h3>About Meta Technology</h3>
           </div>
-          {dataMeta.length >0 && dataMeta.map((item)=>(
-
-            <div class="widgetcontent">
-              <img src={item.imageLogo} alt="" />
-              <br />
-              <span>{item.titleInfor}</span>
-            </div>
-          ))}
+          {
+            dataMeta.length > 0 &&
+              dataMeta.map((item) => (
+                <div class="widgetcontent">
+                  <img src={item.imageLogo} alt="" />
+                  <br />
+                  <span>{item.titleInfor}</span>
+                </div>
+              ))
+          }
         </div>
       </div>
       <div class="footer-common-widget">
@@ -70,3 +72,8 @@ import { dataFooter,dataMeta } from "../../data/data.json";
   </body>
   <html></html>
 </html>
+<html></html>
+
+<html></html>
+
+<html></html>
