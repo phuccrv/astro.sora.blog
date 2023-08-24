@@ -17,16 +17,13 @@ console.log(post);
     <div class="content-detail">
       <div class="title-detail">
         <h1>{post.postTitle}</h1>
-        <div class="title-smole">
+        <div class="title-smole" style="margin: 10px 0px;">
           {post.postCategory}
           <span>/</span>
           {post.author}
           <span>/</span>
           {post.date}
         </div>
-      </div>
-      <div class="img-detail">
-        <img src={post.imageSrc} alt="" />
       </div>
       <div class="text-post">
         {post.postSnippet}
