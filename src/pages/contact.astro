@@ -11,8 +11,12 @@ import Layout from "../layouts/Layout.astro";
         <input type="text" placeholder="Name..." />
         <input type="email" placeholder="Email..." />
         <br />
-        <textarea name="" id="" cols="30" rows="10" placeholder="your comment"
-        ></textarea>
+        <textarea
+          name=""
+          id=""
+          cols="30"
+          rows="10"
+          placeholder="Your comment..."></textarea>
         <br />
         <button type="submit">SEND</button>
       </form>
@@ -55,11 +59,19 @@ import Layout from "../layouts/Layout.astro";
     padding: 0px 10px;
     margin-bottom: 20px;
   }
+  form input::placeholder {
+    color: #050505;
+  }
   textarea {
     border-color: #ccc;
     margin-bottom: 10px;
     width: 100%;
     border-radius: 5px;
+    padding: 10px;
+  }
+
+  textarea::placeholder {
+    color: #050505;
   }
 
   form button {
