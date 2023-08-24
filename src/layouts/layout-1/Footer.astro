@@ -3,77 +3,58 @@ import "./styles.css";
 import { dataFooter, dataMeta } from "../../data/data.json";
 ---
 
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="description" content="Astro description" />
-    <meta name="viewport" content="width=device-width" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="generator" content={Astro.generator} />
-    <title></title>
-  </head>
-  <body>
-    <div id="footer-wrapper">
-      <div class="footer-common-widget">
-        <div class="widget-Image">
-          <div class="widget-title">
-            <h3>About Meta Technology</h3>
-          </div>
-          {
-            dataMeta.length > 0 &&
-              dataMeta.map((item) => (
-                <div class="widgetcontent">
-                  <img src={item.imageLogo} alt="" />
-                  <br />
-                  <span>{item.titleInfor}</span>
-                </div>
-              ))
-          }
-        </div>
+<div id="footer-wrapper">
+  <div class="footer-common-widget">
+    <div class="widget-Image">
+      <div class="widget-title">
+        <h3>About Meta Technology</h3>
       </div>
-      <div class="footer-common-widget">
-        <div class="widget-title">
-          <h3>Usefull Links</h3>
-          <div class="widget-content">
-            <ul>
-              <li><a href="">Home</a></li>
-              <li><a href="">Contact Us</a></li>
-              <li><a href="">About Us</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div class="footer-common-widget">
-        <div class="box-footer-common-widget">
-          <div class="widget-title">
-            <h3>Recent in Fashion</h3>
-          </div>
-          {
-            dataFooter.map((item) => (
-              <div class="box-cart-footer">
-                <div class="box-cart-footer-img">
-                  <img src={item.imageSrc} alt="" />
-                </div>
-                <div class="box-cart-footer-infor">
-                  <a href="">{item.postTitle}</a>
-                  <br />
-                  <span>{item.date}</span>
-                </div>
-              </div>
-            ))
-          }
-        </div>
+      {
+        dataMeta.length > 0 &&
+          dataMeta.map((item) => (
+            <div class="widgetcontent">
+              <img src={item.imageLogo} alt="" />
+              <br />
+              <span>{item.titleInfor}</span>
+            </div>
+          ))
+      }
+    </div>
+  </div>
+  <div class="footer-common-widget">
+    <div class="widget-title">
+      <h3>Usefull Links</h3>
+      <div class="widget-content">
+        <ul>
+          <li><a href="">Home</a></li>
+          <li><a href="">Contact Us</a></li>
+          <li><a href="">About Us</a></li>
+        </ul>
       </div>
     </div>
-    <div class="footer-bottom">
-      <span>CREATED BY</span><p>Meta Technology</p>
+  </div>
+  <div class="footer-common-widget">
+    <div class="box-footer-common-widget">
+      <div class="widget-title">
+        <h3>Recent in Fashion</h3>
+      </div>
+      {
+        dataFooter.map((item) => (
+          <div class="box-cart-footer">
+            <div class="box-cart-footer-img">
+              <img src={item.imageSrc} alt="" />
+            </div>
+            <div class="box-cart-footer-infor">
+              <a href="">{item.postTitle}</a>
+              <br />
+              <span>{item.date}</span>
+            </div>
+          </div>
+        ))
+      }
     </div>
-  </body>
-  <html></html>
-</html>
-<html></html>
-
-<html></html>
-
-<html></html>
+  </div>
+</div>
+<div class="footer-bottom">
+  <span>CREATED BY</span><p>Meta Technology</p>
+</div>
