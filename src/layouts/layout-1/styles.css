@@ -301,6 +301,9 @@
     display: flex;
     margin: 50px 100px;
     background-color: var(--main-bg-color);
+    -webkit-box-shadow: 1px 0px 5px 4px rgba(199, 199, 199, 0.15);
+    -moz-box-shadow: 1px 0px 5px 4px rgba(199, 199, 199, 0.15);
+    box-shadow: 1px 0px 5px 4px rgba(199, 199, 199, 0.15);
 }
 
 .footer-common-widget {

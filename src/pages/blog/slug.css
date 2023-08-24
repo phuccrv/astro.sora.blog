@@ -9,6 +9,14 @@
     margin: 0px 100px;
     background-color: white;
     padding: 10px;
+    border-radius: 5px;
+    -webkit-box-shadow: 1px 0px 5px 4px rgba(199, 199, 199, 0.15);
+    -moz-box-shadow: 1px 0px 5px 4px rgba(199, 199, 199, 0.15);
+    box-shadow: 1px 0px 5px 4px rgba(199, 199, 199, 0.15);
+}
+
+.content-detail {
+    padding: 20px;
 }
 
 .title-detail h1 {
@@ -26,10 +34,6 @@
     height: 100%;
     object-fit: cover;
     border-radius: 3px;
-}
-
-.text-post {
-    /* margin-bottom: 20px; */
 }
 
 .post-care span {
@@ -165,6 +169,12 @@
 }
 
 @media screen and (min-width:1124px) and (max-width:1492px) {
+    .detail {
+        margin: 20px 100px;
+    }
+}
+
+@media screen and (min-width:1492px) and (max-width:1880px) {
     .detail {
         margin: 20px 100px;
     }
