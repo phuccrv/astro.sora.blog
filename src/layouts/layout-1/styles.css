@@ -324,6 +324,10 @@
     margin: 10px 0px;
 }
 
+.widgetcontent {
+    text-align: center;
+}
+
 .widgetcontent img {
     width: 310px;
     height: 200px;

@@ -1,6 +1,6 @@
 ---
 import "./styles.css";
-import { dataFooter, dataMeta } from "../../data/data.json";
+import { dataFooter, dataMeta, dataContent } from "../../data/data.json";
 ---
 
 <div id="footer-wrapper">
@@ -26,9 +26,10 @@ import { dataFooter, dataMeta } from "../../data/data.json";
       <h3>Usefull Links</h3>
       <div class="widget-content">
         <ul>
-          <li><a href="">Home</a></li>
-          <li><a href="">Contact Us</a></li>
-          <li><a href="">About Us</a></li>
+          <li><a href="/">Home</a></li>
+          <li><a href="/contact">Contact Us</a></li>
+          <li><a href="/privacy">Privacy Policy</a></li>
+          <li><a href="/TermsOfService">Terms Of Service</a></li>
         </ul>
       </div>
     </div>
@@ -39,10 +40,10 @@ import { dataFooter, dataMeta } from "../../data/data.json";
         <h3>Recent in Fashion</h3>
       </div>
       {
-        dataFooter.map((item) => (
+        dataContent.map((item) => (
           <div class="box-cart-footer">
             <div class="box-cart-footer-infor">
-              <a href="">{item.postTitle}</a>
+              <a href={`/blog/${item.urlSlug}`}>{item.postTitle}</a>
               <br />
               <span>{item.date}</span>
             </div>

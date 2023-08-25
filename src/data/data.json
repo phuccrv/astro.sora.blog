@@ -4,7 +4,7 @@
       "slug": 1,
       "urlSlug": "from-the-beginning-we-are-constantly-focus-in-web-based",
       "postTitle": "PT. META TECHNOLOGY INDONESIA was established in 2003",
-      "postCategory": "IT",
+      "postCategory": "PT.meta",
       "author": "Consulting",
       "date": "6/30/2003",
       "postSnippet": "From the beginning we are constantly focus in web based application solution. Since then we have a lot of product for core operation system for various line of business and already success implemented in a lot of big national and multinational company in Indonesia and overseas.",
@@ -34,7 +34,7 @@
       "slug": 2,
       "urlSlug": "from-inspiring-novels-to-frank-discussions-of-sexuality",
       "postTitle": "META AOS (Automotive Operating System) / Dealer Management System",
-      "postCategory": "Meta",
+      "postCategory": "Meta aos",
       "author": "Account Management",
       "date": "3/17/2003",
       "postSnippet": "From inspiring novels to frank discussions of sexuality, these are the books students wish they had read to ease the transition to university and prepare for a new stage in their academic and personal lives.",
@@ -63,7 +63,7 @@
       "slug": 3,
       "urlSlug": "it-is-a-long-established-fact-that-a-reader",
       "postTitle": "META CRM (Customer Relationship Management)",
-      "postCategory": "META",
+      "postCategory": "Meta CRM",
       "author": "CRM",
       "date": "3/17/2013",
       "postSnippet": "META CRM (Customer Relationship Management) is a web based application to help your company reaching the goal. This application have feature for helping your company to maintain a good relationship with your customer.",
@@ -92,7 +92,7 @@
       "slug": 4,
       "urlSlug": "this-application-accommodate-the-whole-transactions",
       "postTitle": "META CTS (Cloud Trading System)",
-      "postCategory": "Application",
+      "postCategory": "Meta CTS",
       "author": "sales",
       "date": "38/18/2003",
       "postSnippet": "This application accommodate the whole transactions and activities in the trading line of business, such as : sales, purchasing,  Inventory, re-assembling ",
@@ -151,7 +151,7 @@
   "dataMeta": [
     {
       "imageLogo": "https://pngimg.com/uploads/meta/meta_PNG12.png",
-      "titleInfor": "We take a brand-first approach to eCommerce. Our commitment is to create and execute campaigns that leave an impact on your target market."
+      "titleInfor": "We take a brand-first approach to eCommerce. Our commitment is to create"
     }
   ]
 }

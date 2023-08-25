@@ -48,30 +48,30 @@ import Youtube from "../../components/vsg/Youtube.astro";
         <div class="widget-content">
           <div class="link-app-top">
             <div class="facebook icon-link">
-              <Facebook />
+              <a href=""><Facebook /></a>
             </div>
             <div class="twitter icon-link">
-              <Twitter />
+              <a href=""><Twitter /></a>
             </div>
             <div class="pinterest icon-link">
-              <Pinterest />
+              <a href=""><Pinterest /></a>
             </div>
             <div class="whatsapp icon-link">
-              <Whatsapp />
+              <a href=""><Whatsapp /></a>
             </div>
           </div>
           <div class="link-app-bt">
             <div class="reddit icon-link">
-              <Reddit />
+              <a href=""><Reddit /></a>
             </div>
             <div class="vk icon-link">
-              <Vk />
+              <a href=""><Vk /></a>
             </div>
             <div class="instagram icon-link">
-              <Instagram />
+              <a href=""><Instagram /></a>
             </div>
             <div class="youtube icon-link">
-              <Youtube />
+              <a href=""><Youtube /></a>
             </div>
           </div>
         </div>
@@ -86,7 +86,7 @@ import Youtube from "../../components/vsg/Youtube.astro";
               <div class="PopularPosts-img" />
               <div class="PopularPosts-infor">
                 <h2>
-                  <a href={`/blog/${item.slug}`}>{item.postTitle}</a>
+                  <a href={`/blog/${item.urlSlug}`}>{item.postTitle}</a>
                 </h2>
                 <div class="post-meta">
                   <span>{item.date}</span>
@@ -104,7 +104,7 @@ import Youtube from "../../components/vsg/Youtube.astro";
               data.dataContent.map((item) => (
                 <div class="item-Labels">
                   <span>
-                    <a href="">{item.postCategory}</a>
+                    <a href={`/blog/${item.urlSlug}`}>{item.postCategory}</a>
                   </span>
                 </div>
               ))
