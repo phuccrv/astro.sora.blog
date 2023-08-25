@@ -2,6 +2,7 @@
   "dataContent": [
     {
       "slug": 1,
+      "urlSlug": "from-the-beginning-we-are-constantly-focus-in-web-based",
       "postTitle": "PT. META TECHNOLOGY INDONESIA was established in 2003",
       "postCategory": "IT",
       "author": "Consulting",
@@ -31,6 +32,7 @@
     },
     {
       "slug": 2,
+      "urlSlug": "from-inspiring-novels-to-frank-discussions-of-sexuality",
       "postTitle": "META AOS (Automotive Operating System) / Dealer Management System",
       "postCategory": "Meta",
       "author": "Account Management",
@@ -59,6 +61,7 @@
     },
     {
       "slug": 3,
+      "urlSlug": "it-is-a-long-established-fact-that-a-reader",
       "postTitle": "META CRM (Customer Relationship Management)",
       "postCategory": "META",
       "author": "CRM",
@@ -87,6 +90,7 @@
     },
     {
       "slug": 4,
+      "urlSlug": "this-application-accommodate-the-whole-transactions",
       "postTitle": "META CTS (Cloud Trading System)",
       "postCategory": "Application",
       "author": "sales",
@@ -147,7 +151,7 @@
   "dataMeta": [
     {
       "imageLogo": "https://pngimg.com/uploads/meta/meta_PNG12.png",
-      "titleInfor": "Lorem ipsum dolor sit amet Cras vitae nibh nisl. Cras etwmaur is egettobsi lorem ultricies ferme ntutbm a in diam. Morbi mollis"
+      "titleInfor": "We take a brand-first approach to eCommerce. Our commitment is to create and execute campaigns that leave an impact on your target market."
     }
   ]
 }

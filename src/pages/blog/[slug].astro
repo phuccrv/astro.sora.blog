@@ -6,9 +6,8 @@ import MtRight from "../../components/vsg/MtRight.astro";
 import "../blog/slug.css";
 
 const { slug } = Astro.params;
-const post = data.dataContent.filter(
-  (post: any) => post.slug === Number(slug)
-)[0];
+
+const post = data.dataContent.filter((post: any) => post.urlSlug === slug)[0];
 console.log(post);
 ---
 
